@@ -2,9 +2,11 @@ import React from 'react';
 import s from './Header.module.css';
 const Header = () => {
     return (
+
         <header className={s.header}>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/DC_Comics_logo.png/600px-DC_Comics_logo.png'></img>
+            <img src='https://cdn.freebiesupply.com/logos/large/2x/50x50-logo-png-transparent.png'/>
         </header>
+
     );
 }
 
