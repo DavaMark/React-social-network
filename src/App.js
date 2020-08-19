@@ -5,19 +5,29 @@ import Nav from './components/Nav/Nav';
 import Profile from './components/Profile/Profile';
 import MyPosts from './components/Profile/MyPosts/MyPosts';
 import Dialogs from './components/Dialogs/Dialogs';
+import News from "./components/News/News";
+import Music from "./components/Music/Music";
+import Settings from "./components/Settings/Settings";
+
+import {BrowserRouter, Route} from "react-router-dom";
 
 
 const App = () => {
     return (
+    <BrowserRouter>
         <div className="app-wrapper">
             <Header/>
             <Nav/>
             <div className='app-wrapper-content'>
-
-                <Dialogs/>
+                <Route path="/Profile" component={Profile} />
+                <Route path="/Dialogs" component={Dialogs}/>
+                <Route path="/News" component={News} />
+                <Route path="/Music" component={Music} />
+                <Route path="/Settings" component={Settings} />
             </div>
-            {/*<Profile />*/}
+
         </div>
+    </BrowserRouter>
     );
 }
 
