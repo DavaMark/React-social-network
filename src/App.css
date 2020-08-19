@@ -5,8 +5,9 @@
 
 .app-wrapper {
     display: grid;
-    margin: 0 auto;
-    width: 1200px;
+    width: 100%;
+
+    
     grid-template-areas:
         "header header header"
         "nav content content";
@@ -14,14 +15,17 @@
     grid-template-columns: 2fr 10fr;
     grid-gap: 10px;
     background-color: #191919;
+
 }
 
 .app-wrapper-content {
+
 
     grid-area: content;
     background-color: #222222;
     color: #888888;
     padding: 10px;
     border-radius: 5px;
+
 }
 
