@@ -6,7 +6,7 @@ const Profile = () => {
     return (
         <div>
             <div>
-                <img src="https://images3.alphacoders.com/106/1069102.jpg" />
+                <img src="http://www.natalielord.com/wp-content/uploads/2014/12/3D-Wather-Drops-Wallpaper-Hd-1920x500.jpg" className={s.topimg}/>
             </div>
             <div>ava + description</div>
             <MyPosts />
