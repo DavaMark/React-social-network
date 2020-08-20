@@ -17,35 +17,43 @@ const Message = (props) => {
 }
 
 
+let dialogsData = [
+    {id: 1, name: "Andrey"},
+    {id: 2, name: "Vitaliy"},
+    {id: 3, name: "Sergey"},
+    {id: 4, name: "Dima"},
+    {id: 5, name: "Danil"}
+]
+
+let messagesData = [
+    {id: 1, message: "Hi"},
+    {id: 2, message: "Bro? how are you"},
+    {id: 3, message: "what's app?"},
+    {id: 4, message: "Yo"},
+    {id: 5, message: "You must see that!"}
+]
+
+
 const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <Dialog name="Andrey" id="1"/>
-                <Dialog name="Vitaliy" id="2"/>
-                <Dialog name="Sergey" id="3"/>
-                <Dialog name="Dima" id="4"/>
-                <Dialog name="Danil" id="5"/>
+                <Dialog name={dialogsData[0].name} id={dialogsData[0].id}/>
+                <Dialog name={dialogsData[1].name} id={dialogsData[1].id}/>
+                <Dialog name={dialogsData[2].name} id={dialogsData[2].id}/>
+                <Dialog name={dialogsData[3].name} id={dialogsData[3].id}/>
+                <Dialog name={dialogsData[4].name} id={dialogsData[4].id}/>
             </div>
             <div className={s.messages}>
-                <Message text="Hi"/>
-                <Message text="Bro? how are you"/>
-                <Message text="what's app?"/>
-                <Message text="Yo"/>
-                <Message text="You must see that!"/>
+                <Message text={messagesData[0].message}/>
+                <Message text={messagesData[1].message}/>
+                <Message text={messagesData[2].message}/>
+                <Message text={messagesData[3].message}/>
+                <Message text={messagesData[4].message}/>
             </div>
         </div>
 
     );
 }
-{/*<div className={s.message}></div>*/
-}
-{/*<div className={s.message}></div>*/
-}
-{/*<div className={s.message}></div>*/
-}
-{/*<div className={s.message}></div>*/
-}
-{/*<div className={s.message}></div>*/
-}
+
 export default Dialogs;
