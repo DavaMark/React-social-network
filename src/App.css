@@ -7,7 +7,7 @@
     display: grid;
     width: 100%;
 
-    
+
     grid-template-areas:
         "header header header"
         "nav content content";
@@ -24,7 +24,6 @@
     grid-area: content;
     background-color: #222222;
     color: #888888;
-    padding: 10px;
     border-radius: 5px;
 
 }

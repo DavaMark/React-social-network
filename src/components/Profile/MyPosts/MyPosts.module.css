@@ -1,0 +1,27 @@
+.postsBlock {
+    padding: 10px;
+}
+
+.postsBlock textarea {
+    background-color: #222222;
+    border: 2px solid #888888;
+    border-radius: 5px;
+    resize: none;
+    color: #888888;
+    font-size: 16px;
+}
+
+.posts {
+    margin-top: 10px;
+}
+
+.likeBtn {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #c5c090;
+    color: #222222;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
